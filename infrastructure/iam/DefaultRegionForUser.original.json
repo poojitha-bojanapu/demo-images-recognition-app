@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "NotAction": [
+                "ce:*",
+                "cur:*",
+                "aws-portal:*",
+                "budgets:*",
+                "billing:*",
+                "iam:*",
+                "sts:*",
+                "organizations:*",
+                "support:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:RequestedRegion": "ap-south-2"
+                }
+            }
+        }
+    ]
+}

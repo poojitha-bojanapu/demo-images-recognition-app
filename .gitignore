@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+package-lock.json
+
+# build output
+dist/
+backend/.build/
+frontend/.env
+
+# local aws
+infrastructure/outputs.env
+*.zip
+
+# os/editor
+.DS_Store
+*.log
+.env.local
